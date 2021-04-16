@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TakeHomeExercise</string>
+    
+    <string-array name="cities">
+        <item>Kuala Lumpur</item>
+        <item>Singapore</item>
+    </string-array>
+
+</resources>

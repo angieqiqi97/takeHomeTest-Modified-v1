@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ResultPage"
+    android:layout_marginTop="50dp"
+    android:padding= "30dp">
+
+    <TextView
+        android:id="@+id/celsiusLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Celsius"
+        android:textSize= "16dp"
+        android:textColor="#FF6666"
+        android:textStyle="bold"
+        android:layout_above="@id/tempC"
+        />
+
+    <EditText
+        android:id="@+id/tempC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize= "16dp"
+        android:backgroundTint="#C1C1C1"
+        android:layout_above="@id/fahrenheitLabel"
+        android:layout_marginBottom="20dp"
+        android:editable="false"
+        tools:ignore="Deprecated" />
+
+    <TextView
+        android:id="@+id/fahrenheitLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fahrenheit"
+        android:textSize= "16dp"
+        android:textColor="#FF6666"
+        android:textStyle="bold"
+        android:layout_above="@id/tempF"
+        />
+
+    <EditText
+        android:id="@+id/tempF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize= "16dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#C1C1C1"
+        android:editable="false"
+        tools:ignore="Deprecated" />
+
+</LinearLayout>

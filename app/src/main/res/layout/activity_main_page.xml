@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="40dp"
+    tools:context=".MainPage">
+
+    <TextView
+        android:id="@+id/apiKeyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize= "16dp"
+        android:text="Your API Key"
+        android:textColor="#FF6666"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/apiKeyText"
+        />
+
+    <EditText
+        android:id="@+id/apiKeyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize= "16dp"
+        android:backgroundTint="#C1C1C1"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/cityNameLabel"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/cityNameLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="City Name"
+        android:textSize= "16dp"
+        android:textColor="#FF6666"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/cityNameSpinner"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/cityNameSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/submitButton"
+        />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Submit"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF6666"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:textAllCaps="false"
+        />
+
+</RelativeLayout>
